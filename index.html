@@ -549,7 +549,7 @@
         </div>
     </div>
 
-    <div class="slide" id="slide-architecture-img">
+    <div class="slide" id="slide-4">
         <h2>03 // System Blueprint</h2>
         <div style="flex: 1; display: flex; align-items: center; justify-content: center; width: 100%;">
             <img src="https://i.postimg.cc/J4K5vzTp/Gemini-Generated-Image-igr1uzigr1uzigr1.png" 
@@ -558,7 +558,7 @@
         </div>
     </div>
 
-    <div class="slide" id="slide-4">
+    <div class="slide" id="slide-5">
         <h2>04 // Logic Flow Diagram</h2>
         <p>Flow of data from trigger to action.</p>
         
@@ -597,7 +597,7 @@
         </div>
     </div>
 
-    <div class="slide" id="slide-5">
+    <div class="slide" id="slide-6">
         <div style="text-align: center; margin-bottom: 10px;">
             <h2>05 // Live Simulation: "The Perfect Storm"</h2>
         </div>
@@ -626,7 +626,7 @@
         <button class="run-btn" onclick="runChatSim()"><i class="fa-solid fa-play"></i> INITIATE AGENTS</button>
     </div>
 
-    <div class="slide" id="slide-6">
+    <div class="slide" id="slide-7">
         <div class="hero-content" style="text-align: center; justify-content: center;">
             <h1>Democratizing<br>Financial Intelligence.</h1>
             <div class="summary-stats">
@@ -648,6 +648,14 @@
                     <p class="mono" style="font-size: 30px; color: #666;">FINERIS PROJECT // THANK YOU</p>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="slide" id="slide-8">
+        <div class="hero-content" style="text-align: center; justify-content: center; align-items: center;">
+            <i class="fa-regular fa-comments" style="font-size: 120px; color: var(--accent-cyan); margin-bottom: 40px;"></i>
+            <h1>Questions?</h1>
+            <p style="font-size: 30px; color: #888;">Thank you for listening.</p>
         </div>
     </div>
 
@@ -737,26 +745,22 @@
     }
     animateCrash();
 
-    // --- SLIDE 5: CHAT SIMULATION ---
+    // --- SLIDE 6: CHAT SIMULATION (AUTONOMOUS UPDATE) ---
     const chatFeed = document.getElementById('chat-feed');
     const typing = document.getElementById('typing-bubble');
 
     const script = [
         { type: 'sys', text: 'Market Alert: TSLA drops 5% on Recall News.' },
         { delay: 800 },
-        { type: 'sup', text: '<b>TSLA Alert</b>. User holds 45 units. @Guardian check history.' },
+        { type: 'sup', text: '<b>TSLA Alert</b>. Checking user constraints. @Guardian verify?' },
         { delay: 1000 },
-        { type: 'gua', text: 'Scanning SEC database for recall precedents...' },
+        { type: 'gua', text: 'Detected Panic Sell-Off. Historical data confirms recovery. <br><b>ACTION: POSITION LOCKED.</b>' },
         { delay: 1500 },
-        { type: 'gua', text: 'Found 2021 match. Software fix only. Stock recovered in 72h. <br><b>Recommendation: HOLD.</b>' },
-        { delay: 1000 },
         { type: 'sys', text: 'Market Alert: NVDA surges on Q3 Earnings.' },
         { delay: 800 },
-        { type: 'sup', text: '<b>NVDA Opportunity</b>. $20k Cash available. @Scout?' },
+        { type: 'sco', text: 'Strong Momentum. Cash Available. <br><b>ACTION: BUY ORDER EXECUTED.</b>' },
         { delay: 1200 },
-        { type: 'sco', text: 'Technicals Strong. RSI 60. Volume +200%. <br><b>STRONG BUY SIGNAL.</b>' },
-        { delay: 1000 },
-        { type: 'sup', text: '<b>DECISION SUMMARY:</b><br>1. <b>TSLA</b>: Retaining position. Guardian confirms drop is temporary noise.<br>2. <b>NVDA</b>: Allocating $5k cash. Scout confirms strong breakout.<br><i>Portfolio rebalanced.</i>' }
+        { type: 'sup', text: '<b>AUTONOMOUS REPORT:</b><br>1. TSLA: Protected (Not Sold).<br>2. NVDA: Bought automatically.<br><i>Portfolio Rebalanced.</i>' }
     ];
 
     function runChatSim() {
